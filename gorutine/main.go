@@ -10,7 +10,7 @@ func main() {
 
 	go showNumners()
 
-	fmt.Println(runtime.NumCPU())
+	runtime.Gosched()
 
 	//time.Sleep(time.Second)
 

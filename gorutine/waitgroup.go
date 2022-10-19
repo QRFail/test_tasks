@@ -52,8 +52,6 @@ func writeWithMutex() {
 
 	wg.Wait()
 
-	delta_time := time.Now().Sub(start).Seconds()
-
 	fmt.Printf("Count %d\n", count)
-	fmt.Println(delta_time)
+	fmt.Println(time.Now().Sub(start).Seconds())
 }
